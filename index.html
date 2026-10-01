@@ -2,7 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Mehdi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mehdi - Création de sites web</title>
 
     <style>
         body {
@@ -21,22 +23,30 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 20px;
+            margin: 15px;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
         }
 
         .accueil {
             text-align: center;
-            padding: 80px 20px;
+            padding: 100px 20px;
         }
 
         .accueil h1 {
-            font-size: 45px;
+            font-size: 48px;
+            margin-bottom: 20px;
         }
 
         .accueil p {
             font-size: 20px;
             color: #cbd5e1;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
         }
 
         .bouton {
@@ -46,12 +56,24 @@
             padding: 15px 25px;
             border-radius: 8px;
             text-decoration: none;
-            margin-top: 20px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+
+        .bouton:hover {
+            background-color: #1d4ed8;
         }
 
         .projets {
-            padding: 50px 10%;
+            padding: 70px 10%;
             text-align: center;
+        }
+
+        .projets h2,
+        .services h2,
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
         }
 
         .cartes {
@@ -64,9 +86,14 @@
         .carte {
             background-color: #111827;
             width: 300px;
-            border-radius: 12px;
+            border-radius: 15px;
             overflow: hidden;
             padding-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .carte:hover {
+            transform: translateY(-8px);
         }
 
         .carte img {
@@ -81,23 +108,52 @@
 
         .carte p {
             color: #cbd5e1;
-            padding: 0 15px;
+            padding: 0 20px;
+            line-height: 1.5;
         }
 
         .services {
-            padding: 50px 10%;
+            padding: 70px 10%;
             text-align: center;
             background-color: #111827;
         }
 
+        .service-cartes {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: #0b1120;
+            width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .service h3 {
+            font-size: 20px;
+        }
+
+        .service p {
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+
         .contact {
-            padding: 50px;
+            padding: 80px 20px;
             text-align: center;
         }
 
-        .email {
+        .contact p {
             font-size: 20px;
+            color: #cbd5e1;
+        }
+
+        .email {
             color: white;
+            font-size: 20px;
             text-decoration: none;
         }
 
@@ -107,9 +163,30 @@
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             background-color: #050914;
             color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .accueil h1 {
+                font-size: 35px;
+            }
+
+            .accueil {
+                padding: 70px 20px;
+            }
+
+            .carte {
+                width: 100%;
+                max-width: 350px;
+            }
         }
     </style>
 </head>
@@ -129,12 +206,12 @@
         <h1>Bonjour, je suis Mehdi 👋</h1>
 
         <p>
-            Je crée des sites web modernes, simples et adaptés
-            aux besoins de chaque client.
+            Je crée des sites web modernes et simples pour les
+            restaurants, coiffeurs, clubs et petites entreprises.
         </p>
 
         <a class="bouton" href="#projets">
-            Voir mes projets
+            Découvrir mes projets
         </a>
 
     </section>
@@ -149,13 +226,13 @@
 
             <div class="carte">
 
-                <img src="restaurant.webp" alt="Site restaurant">
+                <img src="restaurant.webp" alt="Site web restaurant">
 
-                <h3>Restaurant</h3>
+                <h3>🍽️ Restaurant</h3>
 
                 <p>
-                    Création d'un site moderne pour présenter
-                    un restaurant et son menu.
+                    Un site moderne pour présenter un restaurant,
+                    son menu et ses informations.
                 </p>
 
                 <a class="bouton" href="restaurant.html">
@@ -167,13 +244,13 @@
 
             <div class="carte">
 
-                <img src="coiffeur.webp" alt="Site coiffeur">
+                <img src="coiffeur.webp" alt="Site web coiffeur">
 
-                <h3>Coiffeur</h3>
+                <h3>💈 Coiffeur</h3>
 
                 <p>
-                    Site pour présenter un salon de coiffure,
-                    ses services et ses tarifs.
+                    Un site pour présenter les services,
+                    les tarifs et les informations d'un salon.
                 </p>
 
                 <a class="bouton" href="coiffeur.html">
@@ -185,13 +262,13 @@
 
             <div class="carte">
 
-                <img src="handball.webp" alt="Site handball">
+                <img src="handball.webp" alt="Site web handball">
 
-                <h3>Handball</h3>
+                <h3>🤾 Handball</h3>
 
                 <p>
-                    Site pour présenter un club de handball,
-                    ses équipes et ses entraînements.
+                    Un site pour présenter un club, ses équipes,
+                    ses entraînements et ses matchs.
                 </p>
 
                 <a class="bouton" href="handball.html">
@@ -208,23 +285,59 @@
 
     <section class="services" id="services">
 
-        <h2>Mes services</h2>
+        <h2>Pourquoi travailler avec moi ?</h2>
 
-        <p>💻 Création de sites web</p>
+        <div class="service-cartes">
 
-        <p>📱 Sites adaptés aux téléphones</p>
 
-        <p>🎨 Modification et amélioration de sites</p>
+            <div class="service">
+
+                <h3>💻 Site personnalisé</h3>
+
+                <p>
+                    Un site adapté à l'activité et aux besoins
+                    de chaque client.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>📱 Adapté aux téléphones</h3>
+
+                <p>
+                    Le site s'adapte aux ordinateurs,
+                    tablettes et téléphones.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>⚡ Simple et efficace</h3>
+
+                <p>
+                    Une présentation claire pour permettre
+                    aux visiteurs de trouver rapidement
+                    les informations importantes.
+                </p>
+
+            </div>
+
+
+        </div>
 
     </section>
 
 
     <section class="contact" id="contact">
 
-        <h2>Contact</h2>
+        <h2>Un projet ? Contactez-moi</h2>
 
         <p>
-            Tu veux un site web pour ton activité ?
+            Vous souhaitez créer ou améliorer votre site web ?
         </p>
 
         <p>
@@ -239,9 +352,10 @@
 
     <footer>
 
-        © 2026 Mehdi - Portfolio
+        © 2026 Mehdi - Création de sites web
 
     </footer>
 
 </body>
 </html>
+    
