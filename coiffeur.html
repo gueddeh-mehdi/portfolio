@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Salon de Coiffure - Exemple</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            color: white;
+        }
+
+        nav {
+            background-color: #050505;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero img {
+            width: 80%;
+            max-width: 800px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cccccc;
+        }
+
+        .services {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .cartes {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .carte {
+            background-color: #1d1d1d;
+            width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .carte h3 {
+            font-size: 22px;
+        }
+
+        .prix {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contact {
+            background-color: #050505;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .email {
+            color: white;
+            font-size: 20px;
+        }
+
+        .retour {
+            display: inline-block;
+            background-color: #444444;
+            padding: 14px 25px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">← Retour au portfolio</a>
+    </nav>
+
+
+    <section class="hero">
+
+        <img src="coiffeur.webp" alt="Salon de coiffure">
+
+        <h1>💈 Mon Salon de Coiffure</h1>
+
+        <p>
+            Des coupes modernes et adaptées à votre style.
+        </p>
+
+    </section>
+
+
+    <section class="services">
+
+        <h2>Nos services</h2>
+
+        <div class="cartes">
+
+            <div class="carte">
+                <h3>✂️ Coupe homme</h3>
+                <p>Une coupe adaptée à votre style.</p>
+                <p class="prix">15 €</p>
+            </div>
+
+            <div class="carte">
+                <h3>🧔 Coupe + Barbe</h3>
+                <p>Coupe et entretien de la barbe.</p>
+                <p class="prix">20 €</p>
+            </div>
+
+            <div class="carte">
+                <h3>💈 Dégradé</h3>
+                <p>Dégradé moderne et personnalisé.</p>
+                <p class="prix">18 €</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+
+        <h2>Prenez rendez-vous</h2>
+
+        <p>📍 Nancy</p>
+
+        <p>
+            📧
+            <a class="email" href="mailto:gueddeh.mehdi@icloud.com">
+                gueddeh.mehdi@icloud.com
+            </a>
+        </p>
+
+        <a class="retour" href="index.html">
+            Retour au portfolio
+        </a>
+
+    </section>
+
+
+    <footer>
+        Exemple de site réalisé par Mehdi
+    </footer>
+
+</body>
+</html>

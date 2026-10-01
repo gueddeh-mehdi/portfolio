@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant - Exemple</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #21150f;
+            color: white;
+        }
+
+        nav {
+            background-color: #120b07;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero img {
+            width: 80%;
+            max-width: 800px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #d6c5bb;
+        }
+
+        .menu {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .plats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .plat {
+            background-color: #302017;
+            width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .plat h3 {
+            font-size: 22px;
+        }
+
+        .prix {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contact {
+            background-color: #120b07;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .email {
+            color: white;
+            font-size: 20px;
+        }
+
+        .retour {
+            display: inline-block;
+            background-color: #9a5b2a;
+            padding: 14px 25px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">← Retour au portfolio</a>
+    </nav>
+
+    <section class="hero">
+
+        <img src="restaurant.webp" alt="Restaurant">
+
+        <h1>🍽️ Le Restaurant</h1>
+
+        <p>
+            Bienvenue dans notre restaurant.
+            Découvrez une cuisine simple et savoureuse.
+        </p>
+
+    </section>
+
+
+    <section class="menu">
+
+        <h2>Notre menu</h2>
+
+        <div class="plats">
+
+            <div class="plat">
+                <h3>🍝 Pâtes du chef</h3>
+                <p>Une recette préparée avec des ingrédients frais.</p>
+                <p class="prix">15 €</p>
+            </div>
+
+            <div class="plat">
+                <h3>🥩 Steak grillé</h3>
+                <p>Steak accompagné de pommes de terre.</p>
+                <p class="prix">20 €</p>
+            </div>
+
+            <div class="plat">
+                <h3>🍕 Pizza maison</h3>
+                <p>Pizza préparée sur place.</p>
+                <p class="prix">14 €</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+
+        <h2>Réservez votre table</h2>
+
+        <p>📍 Nancy</p>
+
+        <p>
+            📧
+            <a class="email" href="mailto:gueddeh.mehdi@icloud.com">
+                gueddeh.mehdi@icloud.com
+            </a>
+        </p>
+
+        <a class="retour" href="index.html">
+            Retour au portfolio
+        </a>
+
+    </section>
+
+
+    <footer>
+        Exemple de site réalisé par Mehdi
+    </footer>
+
+</body>
+</html>

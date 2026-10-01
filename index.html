@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Mehdi</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b1120;
+            color: white;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .accueil {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .accueil h1 {
+            font-size: 45px;
+        }
+
+        .accueil p {
+            font-size: 20px;
+            color: #cbd5e1;
+        }
+
+        .bouton {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .projets {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .cartes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .carte {
+            background-color: #111827;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            padding-bottom: 25px;
+        }
+
+        .carte img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .carte h3 {
+            font-size: 24px;
+        }
+
+        .carte p {
+            color: #cbd5e1;
+            padding: 0 15px;
+        }
+
+        .services {
+            padding: 50px 10%;
+            text-align: center;
+            background-color: #111827;
+        }
+
+        .contact {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .email {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #050914;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#projets">Projets</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <section class="accueil" id="accueil">
+
+        <h1>Bonjour, je suis Mehdi 👋</h1>
+
+        <p>
+            Je crée des sites web modernes, simples et adaptés
+            aux besoins de chaque client.
+        </p>
+
+        <a class="bouton" href="#projets">
+            Voir mes projets
+        </a>
+
+    </section>
+
+
+    <section class="projets" id="projets">
+
+        <h2>Mes projets</h2>
+
+        <div class="cartes">
+
+
+            <div class="carte">
+
+                <img src="restaurant.webp" alt="Site restaurant">
+
+                <h3>Restaurant</h3>
+
+                <p>
+                    Création d'un site moderne pour présenter
+                    un restaurant et son menu.
+                </p>
+
+                <a class="bouton" href="restaurant.html">
+                    Voir le projet
+                </a>
+
+            </div>
+
+
+            <div class="carte">
+
+                <img src="coiffeur.webp" alt="Site coiffeur">
+
+                <h3>Coiffeur</h3>
+
+                <p>
+                    Site pour présenter un salon de coiffure,
+                    ses services et ses tarifs.
+                </p>
+
+                <a class="bouton" href="coiffeur.html">
+                    Voir le projet
+                </a>
+
+            </div>
+
+
+            <div class="carte">
+
+                <img src="handball.webp" alt="Site handball">
+
+                <h3>Handball</h3>
+
+                <p>
+                    Site pour présenter un club de handball,
+                    ses équipes et ses entraînements.
+                </p>
+
+                <a class="bouton" href="handball.html">
+                    Voir le projet
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="services" id="services">
+
+        <h2>Mes services</h2>
+
+        <p>💻 Création de sites web</p>
+
+        <p>📱 Sites adaptés aux téléphones</p>
+
+        <p>🎨 Modification et amélioration de sites</p>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Tu veux un site web pour ton activité ?
+        </p>
+
+        <p>
+            📧
+            <a class="email" href="mailto:gueddeh.mehdi@icloud.com">
+                gueddeh.mehdi@icloud.com
+            </a>
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Mehdi - Portfolio
+
+    </footer>
+
+</body>
+</html>
